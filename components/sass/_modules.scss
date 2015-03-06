@@ -1,0 +1,39 @@
+// projects ------------------------------------------------------------------------------
+
+.projects {
+  .project {
+
+  @include clearfix;
+
+    h3 {
+      padding-top: 10px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid $pink;
+
+    }
+  }
+}
+
+//soc media -------------------------------------------------------------------------------
+.socialmedia{
+  .title{
+    float: left;
+  }
+  ul{
+    float:left;
+    li{
+      display:inline-block;
+      margin-left:5px;
+    }
+  }
+  @include at-breakpoint($medium){
+    ul {
+      float: right;
+    }
+  }
+  @include at-breakpoint($large){
+    ul {
+      float: right;
+    }
+  }
+}

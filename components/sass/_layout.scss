@@ -1,0 +1,356 @@
+//susy responsive grid setup--------------------------------------------------------------
+
+$total-columns    :12;
+$column-width     :4em;
+$gutter-width     :1em;
+$grid-padding     :$gutter-width;
+
+@include border-box-sizing;
+
+
+//screen breaks---------------------------------------------------------------------------
+
+$small        : 0em;
+$medium       :50em;
+$large         :75em;
+$xlarge         :95em;
+
+
+//width of susy responsive container--------------------------------------------------------
+
+$container-width: 90em;
+
+
+//content container class------------------------------------------------------------------
+
+.layout{
+  @include container;
+  padding:0 3%;
+}
+
+
+//centering the navigation/social media sections-------------------------------------------
+.navlist {
+  //centering for mobile view
+  display: table;
+  margin: 0 auto;
+}
+
+.sociallist {
+  //centering for mobile view
+  display: table;
+  margin: 0 auto;
+
+  @include at-breakpoint($medium){
+   display: inline;
+  }
+  @include at-breakpoint($large){
+    display: inline;
+  }
+  @include at-breakpoint($xlarge){
+    display: inline;
+  }
+}
+
+
+//header section: Name, Nav and Social Media sections----------------------------------------
+
+header{
+  //header section always spans full 12 grids
+  @include span-columns(12, 12);
+  background:$white;
+  position: fixed;
+  z-index: 2;
+  border-bottom: 2px solid black;
+
+  //name section in header
+  .name{
+    text-align: center;
+    position: relative;
+    display: block;
+    width: 100%;
+    height:40px;
+    margin: 0 auto;
+    p{
+      padding-left:10px;
+      padding-top:5px;
+    }
+    @include span-columns(12, 12);
+
+    //name section layout for different screen sizes.
+    @include at-breakpoint($medium){
+      text-align: left;
+      @include span-columns(4, 12);
+    }
+    @include at-breakpoint($large){
+      text-align: left;
+      @include span-columns(4, 12);
+    }
+    @include at-breakpoint($xlarge){
+      text-align: left;
+      @include span-columns(4, 12);
+    }
+
+  }
+
+  //navigation section in header
+  .navigation{
+    //default layout for the navigation section
+
+    background:$white;
+    @include horizontal-list;
+    ul.nav{
+      @include at-breakpoint($small){
+        @include horizontal-list;
+      }
+      li{
+        a{
+          @include single-transition(all, .5s, ease-out);
+          display:block;
+          text-decoration: none;
+          padding: 5px 10px;
+
+          &:hover{
+
+          }
+        }
+      }
+    }
+
+    //navigation section layout for different screen sizes
+    @include span-columns(12, 12);
+    @include at-breakpoint($medium){
+      @include span-columns(4, 12);
+    }
+    @include at-breakpoint($large){
+      @include span-columns(4, 12);
+    }
+    @include at-breakpoint($xlarge){
+      @include span-columns(4, 12);
+    }
+  }
+
+   //social media section
+  .socialmedia{
+    background:$white;
+    text-align: center;
+    ul{
+      li{
+        padding-top:5px;
+      }
+    }
+    @include span-columns(12, 12);
+    @include at-breakpoint($medium){
+      @include span-columns(4 omega, 12);
+    }
+    @include at-breakpoint($large){
+      @include span-columns(4 omega, 12);
+    }
+    @include at-breakpoint($xlarge){
+      @include span-columns(4 omega, 12);
+    }
+  }
+
+}
+
+
+//main project container: both front listing and individual projects--------------------------
+.projectlist {
+
+  position:relative;
+  @include at-breakpoint($small) {
+    top: 150px;
+  }
+  @include at-breakpoint($medium) {
+    top: 85px;
+  }
+  @include at-breakpoint($large) {
+    top: 85px;
+  }
+  @include at-breakpoint($xlarge) {
+    top: 85px;
+  }
+  img{
+    float:left;
+    margin: {
+      right:10px;
+    }
+  }
+
+  //mobile breakpoint
+  @include at-breakpoint($small) {
+    @include single-transition(all, .3s, ease-out);
+    text-align:center;
+    overflow: hidden;
+    img.proj{
+      float:none;
+    }
+
+    //front page project layout container
+    .projects {
+      @include span-columns(12, 12);
+    }
+
+    //project page container
+    .singleproject{
+      @include span-columns(12, 12);
+
+      //full project container: image and text
+      .fullproject{
+        @include span-columns(12, 12);
+        p{
+          text-align: left;
+        }
+        img{
+          height: auto;
+          width:90%;
+        }
+      }
+    }
+
+    //hide left and right side pad
+    .leftside{
+      @include span-columns(0, 12);
+    }
+    .rightside{
+      @include span-columns(0, 12);
+    }
+  }
+
+  //tab/medium break point
+  @include at-breakpoint($medium){
+    @include single-transition(all, .3s, ease-out);
+    text-align:center;
+    overflow: hidden;
+    img.proj {
+    float:none;
+    }
+
+    //front page individual image layout and container
+    .project{
+      @include span-columns(6, 12);
+
+    }
+    .project:nth-of-type(2n+2) {
+      @include span-columns(6 omega, 12);
+    }
+
+    //project page container
+    .singleproject{
+      @include span-columns(10, 12);
+
+      .fullproject{
+        @include span-columns(12, 12);
+        p{
+          text-align: left;
+        }
+        img{
+
+        }
+      }
+    }
+
+    //include left and right side pad
+    .leftside{
+      @include span-columns(1, 12);
+    }
+    .rightside{
+      @include span-columns(1 omega, 12);
+    }
+  }
+
+
+  @include at-breakpoint($large){
+    @include single-transition(all, 0s, ease-out);
+
+    //front page individual image layout and container
+    .project{
+      @include span-columns(4, 12);
+    }
+    .project:nth-of-type(2n+2){
+     @include span-columns(4, 12);
+    }
+    .project:nth-of-type(3n+3){
+      @include span-columns(4 omega, 12);
+    }
+
+    //project page container
+    .singleproject{
+      @include span-columns(10, 12);
+
+      .fullproject{
+        @include span-columns(12, 12);
+          p{
+            text-align: left;
+          }
+        img{
+
+        }
+      }
+    }
+
+    //include left and right side pad
+    .leftside{
+      @include span-columns(1, 12);
+    }
+    .rightside{
+      @include span-columns(1 omega, 12);
+    }
+  }
+
+  @include at-breakpoint($xlarge){
+    @include single-transition(all, .3s, ease-out);
+
+    //front page individual image layout and container
+    .project{
+      @include span-columns(3, 12);
+
+    }
+    .project:nth-of-type(2n+2){
+      @include span-columns(3, 12);
+    }
+    .project:nth-of-type(3n+3){
+       @include span-columns(3, 12);
+     }
+    .project:nth-of-type(4n+4){
+      @include span-columns(3 omega, 12);
+    }
+
+    //project page container
+    .singleproject{
+      @include span-columns(10, 12);
+      .fullproject{
+        p{
+          text-align: left;
+        }
+        img{
+        width:1000px;
+        }
+      }
+    }
+
+    //include left and right side pad
+    .leftside{
+      @include span-columns(1, 12);
+    }
+    .rightside{
+      @include span-columns(1 omega, 12);
+    }
+  }
+}
+
+
+//footer--------------------------------------------------------------------------------------
+
+footer{
+
+}
+
+
+//iframe positioning for Vimeo videos---------------------------------------------------------
+
+iframe{
+  position:relative;
+  left:-5px;
+
+}

@@ -1,0 +1,688 @@
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 6, ../components/sass/_base.scss */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  line-height: 160%;
+  color: #819090;
+}
+
+/* line 13, ../components/sass/_base.scss */
+header {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 21, ../components/sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* line 28, ../components/sass/_base.scss */
+b {
+  font-weight: bold;
+  color: black;
+}
+
+/* line 33, ../components/sass/_base.scss */
+h1 {
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+  color: #333333;
+  margin-bottom: 3rem;
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 44, ../components/sass/_base.scss */
+h2 {
+  font-size: 1.7rem;
+  line-height: 1.8rem;
+  color: #333333;
+  margin-bottom: 3rem;
+  text-align: left;
+  text-decoration: none;
+}
+
+/* line 57, ../components/sass/_base.scss */
+a {
+  text-decoration: none;
+  color: #0A2933;
+}
+/* line 60, ../components/sass/_base.scss */
+a:hover {
+  color: #C61C6F;
+}
+
+/* line 65, ../components/sass/_base.scss */
+p {
+  margin-bottom: 10px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 72, ../components/sass/_base.scss */
+i {
+  font-style: italic;
+}
+
+/* line 14, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/language/susyone/_grid.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 26, ../components/sass/_layout.scss */
+.layout {
+  *zoom: 1;
+  max-width: 90em;
+  _width: 90em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 3%;
+}
+/* line 38, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+.layout:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 33, ../components/sass/_layout.scss */
+.navlist {
+  display: table;
+  margin: 0 auto;
+}
+
+/* line 39, ../components/sass/_layout.scss */
+.sociallist {
+  display: table;
+  margin: 0 auto;
+}
+@media (min-width: 50em) {
+  /* line 39, ../components/sass/_layout.scss */
+  .sociallist {
+    display: inline;
+  }
+}
+@media (min-width: 75em) {
+  /* line 39, ../components/sass/_layout.scss */
+  .sociallist {
+    display: inline;
+  }
+}
+@media (min-width: 95em) {
+  /* line 39, ../components/sass/_layout.scss */
+  .sociallist {
+    display: inline;
+  }
+}
+
+/* line 58, ../components/sass/_layout.scss */
+header {
+  width: 100%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+  background: #FFFFFF;
+  position: fixed;
+  z-index: 2;
+  border-bottom: 2px solid black;
+}
+/* line 67, ../components/sass/_layout.scss */
+header .name {
+  text-align: center;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  width: 100%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+}
+/* line 74, ../components/sass/_layout.scss */
+header .name p {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+@media (min-width: 50em) {
+  /* line 67, ../components/sass/_layout.scss */
+  header .name {
+    text-align: left;
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+@media (min-width: 75em) {
+  /* line 67, ../components/sass/_layout.scss */
+  header .name {
+    text-align: left;
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+@media (min-width: 95em) {
+  /* line 67, ../components/sass/_layout.scss */
+  header .name {
+    text-align: left;
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+/* line 97, ../components/sass/_layout.scss */
+header .navigation {
+  background: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  width: 100%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+}
+/* line 62, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+header .navigation li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 49, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+header .navigation li:first-child {
+  padding-left: 0;
+}
+/* line 50, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+header .navigation li:last-child {
+  padding-right: 0;
+}
+/* line 52, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+header .navigation li.last {
+  padding-right: 0;
+}
+@media (min-width: 0em) {
+  /* line 102, ../components/sass/_layout.scss */
+  header .navigation ul.nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 62, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  header .navigation ul.nav li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    float: left;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  /* line 49, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  header .navigation ul.nav li:first-child {
+    padding-left: 0;
+  }
+  /* line 50, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  header .navigation ul.nav li:last-child {
+    padding-right: 0;
+  }
+  /* line 52, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  header .navigation ul.nav li.last {
+    padding-right: 0;
+  }
+}
+/* line 107, ../components/sass/_layout.scss */
+header .navigation ul.nav li a {
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  display: block;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+@media (min-width: 50em) {
+  /* line 97, ../components/sass/_layout.scss */
+  header .navigation {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+@media (min-width: 75em) {
+  /* line 97, ../components/sass/_layout.scss */
+  header .navigation {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+@media (min-width: 95em) {
+  /* line 97, ../components/sass/_layout.scss */
+  header .navigation {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+/* line 134, ../components/sass/_layout.scss */
+header .socialmedia {
+  background: #FFFFFF;
+  text-align: center;
+  width: 100%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+}
+/* line 138, ../components/sass/_layout.scss */
+header .socialmedia ul li {
+  padding-top: 5px;
+}
+@media (min-width: 50em) {
+  /* line 134, ../components/sass/_layout.scss */
+  header .socialmedia {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 75em) {
+  /* line 134, ../components/sass/_layout.scss */
+  header .socialmedia {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 95em) {
+  /* line 134, ../components/sass/_layout.scss */
+  header .socialmedia {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/* line 158, ../components/sass/_layout.scss */
+.projectlist {
+  position: relative;
+}
+@media (min-width: 0em) {
+  /* line 158, ../components/sass/_layout.scss */
+  .projectlist {
+    top: 150px;
+  }
+}
+@media (min-width: 50em) {
+  /* line 158, ../components/sass/_layout.scss */
+  .projectlist {
+    top: 85px;
+  }
+}
+@media (min-width: 75em) {
+  /* line 158, ../components/sass/_layout.scss */
+  .projectlist {
+    top: 85px;
+  }
+}
+@media (min-width: 95em) {
+  /* line 158, ../components/sass/_layout.scss */
+  .projectlist {
+    top: 85px;
+  }
+}
+/* line 173, ../components/sass/_layout.scss */
+.projectlist img {
+  float: left;
+  margin-right: 10px;
+}
+@media (min-width: 0em) {
+  /* line 158, ../components/sass/_layout.scss */
+  .projectlist {
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    text-align: center;
+    overflow: hidden;
+  }
+  /* line 185, ../components/sass/_layout.scss */
+  .projectlist img.proj {
+    float: none;
+  }
+  /* line 190, ../components/sass/_layout.scss */
+  .projectlist .projects {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 195, ../components/sass/_layout.scss */
+  .projectlist .singleproject {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 199, ../components/sass/_layout.scss */
+  .projectlist .singleproject .fullproject {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 201, ../components/sass/_layout.scss */
+  .projectlist .singleproject .fullproject p {
+    text-align: left;
+  }
+  /* line 204, ../components/sass/_layout.scss */
+  .projectlist .singleproject .fullproject img {
+    height: auto;
+    width: 90%;
+  }
+  /* line 212, ../components/sass/_layout.scss */
+  .projectlist .leftside {
+    width: 0%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 215, ../components/sass/_layout.scss */
+  .projectlist .rightside {
+    width: 0%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+@media (min-width: 50em) {
+  /* line 158, ../components/sass/_layout.scss */
+  .projectlist {
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    text-align: center;
+    overflow: hidden;
+  }
+  /* line 225, ../components/sass/_layout.scss */
+  .projectlist img.proj {
+    float: none;
+  }
+  /* line 230, ../components/sass/_layout.scss */
+  .projectlist .project {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 234, ../components/sass/_layout.scss */
+  .projectlist .project:nth-of-type(2n+2) {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+  }
+  /* line 239, ../components/sass/_layout.scss */
+  .projectlist .singleproject {
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 242, ../components/sass/_layout.scss */
+  .projectlist .singleproject .fullproject {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 244, ../components/sass/_layout.scss */
+  .projectlist .singleproject .fullproject p {
+    text-align: left;
+  }
+  /* line 254, ../components/sass/_layout.scss */
+  .projectlist .leftside {
+    width: 6.77966%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 257, ../components/sass/_layout.scss */
+  .projectlist .rightside {
+    width: 6.77966%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 75em) {
+  /* line 158, ../components/sass/_layout.scss */
+  .projectlist {
+    -moz-transition: all 0s ease-out;
+    -o-transition: all 0s ease-out;
+    -webkit-transition: all 0s ease-out;
+    transition: all 0s ease-out;
+  }
+  /* line 267, ../components/sass/_layout.scss */
+  .projectlist .project {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 270, ../components/sass/_layout.scss */
+  .projectlist .project:nth-of-type(2n+2) {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 273, ../components/sass/_layout.scss */
+  .projectlist .project:nth-of-type(3n+3) {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
+  /* line 278, ../components/sass/_layout.scss */
+  .projectlist .singleproject {
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 281, ../components/sass/_layout.scss */
+  .projectlist .singleproject .fullproject {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 283, ../components/sass/_layout.scss */
+  .projectlist .singleproject .fullproject p {
+    text-align: left;
+  }
+  /* line 293, ../components/sass/_layout.scss */
+  .projectlist .leftside {
+    width: 6.77966%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 296, ../components/sass/_layout.scss */
+  .projectlist .rightside {
+    width: 6.77966%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 95em) {
+  /* line 158, ../components/sass/_layout.scss */
+  .projectlist {
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  /* line 305, ../components/sass/_layout.scss */
+  .projectlist .project {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 309, ../components/sass/_layout.scss */
+  .projectlist .project:nth-of-type(2n+2) {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 312, ../components/sass/_layout.scss */
+  .projectlist .project:nth-of-type(3n+3) {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 315, ../components/sass/_layout.scss */
+  .projectlist .project:nth-of-type(4n+4) {
+    width: 23.72881%;
+    float: right;
+    margin-right: 0;
+  }
+  /* line 320, ../components/sass/_layout.scss */
+  .projectlist .singleproject {
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 323, ../components/sass/_layout.scss */
+  .projectlist .singleproject .fullproject p {
+    text-align: left;
+  }
+  /* line 326, ../components/sass/_layout.scss */
+  .projectlist .singleproject .fullproject img {
+    width: 1000px;
+  }
+  /* line 333, ../components/sass/_layout.scss */
+  .projectlist .leftside {
+    width: 6.77966%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 336, ../components/sass/_layout.scss */
+  .projectlist .rightside {
+    width: 6.77966%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/* line 352, ../components/sass/_layout.scss */
+iframe {
+  position: relative;
+  left: -5px;
+}
+
+/* line 4, ../components/sass/_modules.scss */
+.projects .project {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 8, ../components/sass/_modules.scss */
+.projects .project h3 {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #C61C6F;
+}
+
+/* line 19, ../components/sass/_modules.scss */
+.socialmedia .title {
+  float: left;
+}
+/* line 22, ../components/sass/_modules.scss */
+.socialmedia ul {
+  float: left;
+}
+/* line 24, ../components/sass/_modules.scss */
+.socialmedia ul li {
+  display: inline-block;
+  margin-left: 5px;
+}
+@media (min-width: 50em) {
+  /* line 30, ../components/sass/_modules.scss */
+  .socialmedia ul {
+    float: right;
+  }
+}
+@media (min-width: 75em) {
+  /* line 35, ../components/sass/_modules.scss */
+  .socialmedia ul {
+    float: right;
+  }
+}

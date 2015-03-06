@@ -1,0 +1,448 @@
+
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+background-color: #fff;
+
+	
+}
+ 
+
+
+/*-------------wrapper stuff-----------------------*/
+
+div #wrapper {
+	
+	width: 1400px;
+ 	height: 100%;
+	position: realtive;
+	top: 0px;
+	margin: 10px auto;
+	padding: 0px;
+}
+
+
+/*-------------main stuff-----------------------*/
+
+div #main {
+	
+
+	background: #FFF;
+//overflow: hidden;
+//border-right: 5px solid #000;
+
+width: 1000px;
+	height: auto;	
+	margin: 0px auto 0px auto;
+	position: relative;
+	
+}
+
+#main a {
+	color: #999999;
+	font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+	font-size : 12px;
+	text-decoration: none;
+
+}
+
+#main a:visited, a:link {
+	color: #999999;
+	font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+	font-size : 12px;
+	text-decoration: none;
+	
+}
+
+
+/*-------------One Million Pixels stuff-----------------------*/
+
+div #onemill {
+	
+
+	background: #FFF;
+overflow: hidden;
+border-right: 5px solid #000;
+
+width: 5px;
+	height: 2695598px;	
+	margin: 0px auto 0px auto;
+	position: relative;
+	
+}
+
+
+/*-------------line stuff-----------------------*/
+
+
+div #line {
+	
+
+backround: #000;
+
+width: 950px;
+	height: 650px;	
+	margin: 0px auto 0px auto;
+	position: relative;
+	z-index: 1;
+	
+}
+
+
+
+
+/*-------------header stuff-----------------------*/
+
+div #headerwrapper {
+	background: #fff;
+	color: #000000;
+	width: 700px;
+ 	height: 30px;
+	position: relative;
+	margin: auto;
+		font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+padding: 20px;
+	 font-size: 20px;
+	  //	text-shadow: 1px 1px 0px #748025; 
+
+
+	
+		
+}
+
+#headerwrapper a {
+	color: #000;
+	font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+	font-size : 20px;
+	text-decoration: none;
+
+}
+
+#headerwrapper a:visited, a:link {
+	color: #000;
+	font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+	font-size : 20px;
+	text-decoration: none;
+	
+}
+
+
+
+
+/*-------------projectdisplay stuff (middle of screen)-----------------------*/
+div #display {
+	width: 850px;
+	height: auto;
+	background-color: #000;
+	//float: left;
+	position: absolute;
+	//border-style:solid;
+	left:150px;
+	top: 0px;
+border-top-style:solid;
+	
+	
+}
+
+/*------------------Image Container---------------------*/
+
+div #image {
+	width: 700px;
+	height: auto;
+	background-color: #FFF;
+	//float: center;
+	position: absolute;
+	left: 75px;
+	top: 10px;
+	//padding: 0px 10px 0px 10px;
+	font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+	
+}
+
+#image a {
+	color: #000;
+	font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+	font-size : 12px;
+	text-decoration: none;
+	
+}
+
+#imagefront h1 {
+ 	color: #000;
+	font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+	font-size: 30px;
+ }
+
+div #imagefront {
+	width: 850px;
+	height: auto;
+	background-color: #FFF;
+	//float: center;
+	position: absolute;
+	//left:100px;
+	top: 10px;
+	font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+
+	
+}
+
+#imagefront a {
+	color: #000;
+	font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+	font-size : 12px;
+	text-decoration: none;
+	
+}
+ 
+ 
+div #imagelg {
+	width: 700px;
+	height: auto;
+	background-color: #FFF;
+	//float: center;
+	position: absolute;
+	left:75px;
+	top: 10px;
+	
+	
+}
+
+#imagelg a {
+	color: #000;
+	font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+	font-size : 12px;
+	text-decoration: none;
+	
+}
+
+div #video {
+	width: 720px;
+	height: auto;
+	background-color: #FFF;
+	//float: center;
+	position: absolute;
+	left: 75px;
+	top: 10px;
+	//padding: 0px 10px 0px 10px;
+	font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+	
+}
+
+div #image2 {
+	width: 700px;
+	height: auto;
+	//background-color: #FFF;
+	//float: center;
+	position: absolute;
+	left: 75px;
+	top: 10px;
+	//padding: 0px 10px 0px 10px;
+	font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+	
+}
+
+
+/*-------------RAZR Love div-----------------------*/
+ #RAZR {
+	
+
+	background: #000;
+//overflow: hidden;
+//border-right: 5px solid #000;
+
+width: 1280px;
+	height: auto;	
+	margin: 0px auto 0px auto;
+	position: absolute;
+	z-index: 3;
+	
+}
+
+
+/*-------------project menu stuff-----------------------*/
+
+
+div #info {
+	width: 65px;
+	height: 600px;
+	background-color: #999999;
+	bottom: 0px;
+	position: absolute;
+top: 15px;
+//padding:10px;
+//border-right: 5px solid #000;
+//border-left: 5px solid #000;
+
+}
+
+
+/*-------------accordion menu stuff-----------------------*/
+
+
+
+#accordion {
+	list-style: none;
+	padding: 5px;
+	width: 130px;
+position: relative;
+	left:0px;
+
+	
+}
+#accordion div {
+		font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+
+	display: block;
+	background-color: #fff;
+	font-size : 18px;
+	margin: 1px;
+		cursor: pointer;
+	padding:  7px;
+	//list-style: circle;
+	//-moz-border-radius: 5px;
+	//-webkit-border-radius: 5px;
+	//border-radius: 5px;
+	color:#000;
+	//font-weight:200;
+}
+#accordion ul {
+		font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+list-style: none;
+	padding: 0 0 0 0;
+	color: #999;
+}
+#accordion ul{
+		font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+display: none;
+	color: #999;
+}
+#accordion ul li {
+		font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+//font-weight: lighter;
+	cursor: auto;
+	background-color: #fff;
+	padding: 0 0 0 7px;
+	color: #999;
+	margin:10px;
+}
+#accordion a {
+		font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+//font-weight:lighter;
+	color: #999;
+	font-size : 11px;
+	
+}
+#accordion a:hover {
+		font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+//text-decoration: underline;
+	//color: #937204;
+	//color: #1405ff;
+	color: #ff05de;
+	font-size:11px;
+}
+
+/*---
+#accordion a:link, a:visited {
+		font-family : "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+//text-decoration: underline;
+	color: #999;
+	font-size:15px;
+}
+
+----*/
+#menu2{
+	width: 650px;
+	height: 40px;
+	//left: -5px;
+position: absolute;
+	//margin:auto;
+	letter-spacing:1px;
+	top:100px;
+	left:310px;
+	z-index:10;
+	font-size:24px;
+		padding:22px 15px 23px 15px;
+
+}
+
+#menu2 ul
+{
+margin: 22;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+
+#menu2 ul li { display: inline; }
+
+#menu2 ul li a
+{
+	
+	padding:22px 15px 23px 15px;
+color: #fff;
+//background-color: #036;
+}
+
+#menu2 ul li a:hover
+{
+	
+	//padding:22px 15px 23px 15px;
+color: #fff;
+background-color: #23FF03;
+//background-color: #036;
+}
+
+
+
+
+
+#menu4 {
+	
+width:100px;
+height: 300px;
+right:300px;
+top:100px;
+background: #000;
+	font-size:11px;
+color:#FFF;
+position: absolute;
+padding: 10px 10px 10px 10px;
+z-index:99; 	
+}
+
+#menu3 {
+	
+width:100px;
+height: 300px;
+left:300px;
+top:200px;
+background: #000;
+	font-size:11px;
+color:#FFF;
+position: absolute;
+padding: 10px 10px 10px 10px;
+z-index:98; 	
+}
+
+
+canvas {
+width: 100%;
+	height: 100%; 	
+position: fixed;
+z-index: 1; 
+//margin: 0 0 0 0;
+//margin: -250px 0 0 -250px;
+}
+
+
+
+
+
+
+
+
+	
+	 
+	
